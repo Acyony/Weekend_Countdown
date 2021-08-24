@@ -19,7 +19,7 @@ function doClick() {
     5 - dayOfWeek
   } left until the weekend!`;
 
-  if (input.value === " ") {
+  if (input.value.trim() === "") {
     document.getElementById("h3_id").innerHTML = emptyInputMessage;
   } else {
     document.getElementById("h3_id").innerHTML = message;
@@ -29,7 +29,7 @@ function doClick() {
 // to clear the input text when refresh the page
 
 function init() {
-  document.getElementById("username").value = " ";
+  document.getElementById("username").value = "";
 }
 window.onload = init;
 
